@@ -1,12 +1,96 @@
-body{
+*{
     margin:0;
     padding:0;
-    font-family:Arial,sans-serif;
-    background:#111;
-    color:white;
-    text-align:center;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
-h1{
-    margin-top:100px;
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0b0f19;
+    color:#ffffff;
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(10,10,10,.85);
+    backdrop-filter:blur(15px);
+    z-index:1000;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+}
+
+.logo span{
+    color:#4f8cff;
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    transition:.3s;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#4f8cff;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:120px 8%;
+    gap:60px;
+}
+
+.hero-left{
+    flex:1;
+}
+
+.hero-left h4{
+    color:#4f8cff;
+    margin-bottom:10px;
+}
+
+.hero-left h1{
+    font-size:60px;
+    margin-bottom:10px;
+}
+
+.hero-left h2{
+    font-size:32px;
+    color:#c8d4ff;
+    margin-bottom:20px;
+}
+
+.hero-left p{
+    max-width:600px;
+    line-height:1.8;
+    color:#cfcfcf;
+}
+
+.buttons{
+    margin-top:35px;
+    display:flex;
+    gap:20px;
 }
