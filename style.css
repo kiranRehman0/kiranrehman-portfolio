@@ -219,3 +219,172 @@ footer{
     border-top:1px solid rgba(255,255,255,.08);
     color:#9ca3af;
 }
+/* ---------- Responsive Design ---------- */
+
+@media (max-width:992px){
+
+.hero{
+flex-direction:column-reverse;
+text-align:center;
+padding-top:150px;
+}
+
+.hero-left p{
+margin:auto;
+}
+
+.buttons{
+justify-content:center;
+}
+
+.circle{
+width:300px;
+height:300px;
+}
+
+.hero-left h1{
+font-size:48px;
+}
+
+.hero-left h2{
+font-size:28px;
+}
+
+nav{
+gap:20px;
+}
+
+}
+
+@media (max-width:768px){
+
+header{
+flex-direction:column;
+gap:20px;
+}
+
+nav{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero{
+padding:160px 6% 80px;
+}
+
+.hero-left h1{
+font-size:40px;
+}
+
+.hero-left h2{
+font-size:24px;
+}
+
+section h2{
+font-size:34px;
+}
+
+.circle{
+width:250px;
+height:250px;
+}
+
+}
+
+@media (max-width:480px){
+
+.hero-left h1{
+font-size:32px;
+}
+
+.hero-left h2{
+font-size:20px;
+}
+
+.logo{
+font-size:24px;
+}
+
+.btn,
+.btn2{
+padding:12px 25px;
+font-size:14px;
+}
+
+section{
+padding:80px 20px;
+}
+
+}
+
+/* ---------- Animations ---------- */
+
+.hero-left{
+animation:slideLeft 1s ease;
+}
+
+.hero-right{
+animation:slideRight 1s ease;
+}
+
+.card,
+.project-card{
+animation:fadeUp .8s ease;
+}
+
+@keyframes slideLeft{
+
+from{
+opacity:0;
+transform:translateX(-80px);
+}
+
+to{
+opacity:1;
+transform:translateX(0);
+}
+
+}
+
+@keyframes slideRight{
+
+from{
+opacity:0;
+transform:translateX(80px);
+}
+
+to{
+opacity:1;
+transform:translateX(0);
+}
+
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(50px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* Scroll Bar */
+
+::-webkit-scrollbar{
+width:10px;
+}
+
+::-webkit-scrollbar-track{
+background:#111827;
+}
+
+::-webkit-scrollbar-thumb{
+background:#4f8cff;
+border-radius:20px;
+}
